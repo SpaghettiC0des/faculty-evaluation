@@ -14,4 +14,7 @@ $config['home'] = 'faculty';
 /**
  * EVALUATOR ROUTES
  */
+
+$config['evaluator/home'] = 'evaluator';
 $config['evaluate/([0-9]+)'] = 'evaluator/$1';
+$config['save-evaluation'] = 'evaluator/save';

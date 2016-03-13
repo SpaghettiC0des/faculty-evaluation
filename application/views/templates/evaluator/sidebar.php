@@ -1,19 +1,20 @@
 <aside id="sidebar" class="sidebar c-overflow">
                 <div class="profile-menu">
                     <a href="">
-                        <div class="profile-pic">
-                            <img src="<?php echo url::base(); ?>public/assets/img/profile-pics/2.jpg" alt="">
-                        </div>
-
+                        
                         <div class="profile-info">
-                            Karl Marx
+                            <?php 
+                                $evaluator = $this->session->get('evaluator');
+
+                                echo "{$evaluator->EvaluatorName}";
+                             ?>
 
                             <i class="zmdi zmdi-caret-down"></i>
                         </div>
                     </a>
 
                     <ul class="main-menu">
-                        <li>
+                     <!--    <li>
                             <a href="profile-about.html"><i class="zmdi zmdi-account"></i> View Profile</a>
                         </li>
                         <li>
@@ -21,9 +22,9 @@
                         </li>
                         <li>
                             <a href=""><i class="zmdi zmdi-settings"></i> Settings</a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href=""><i class="zmdi zmdi-time-restore"></i> Logout</a>
+                            <a href="<?php echo url::site(); ?>evaluator/logout"><i class="zmdi zmdi-time-restore"></i> Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -32,22 +33,22 @@
                     <li class="active">
                         <a href="<?php echo url::site(); ?>evaluator"><i class="zmdi zmdi-home"></i> Home</a>
                     </li>
-                    <li class="sub-menu">
+                    <!-- <li class="sub-menu">
                         <a href=""><i class="zmdi zmdi-file-text zmdi-hc-fw"></i> Faculties</a>
 
                         <ul>
                             <li><a href="textual-menu.html">Add</a></li>
                             <li><a href="image-logo.html">View/Edit/Delete</a></li>
                         </ul>
-                    </li>
-                    <li class="sub-menu">
+                    </li> -->
+                    <!-- <li class="sub-menu">
                         <a href=""><i class="zmdi zmdi-assignment-check zmdi-hc-fw"></i> Evaluate</a>
 
                         <ul>
                             <li><a href="widget-templates.html">Templates</a></li>
                             <li><a href="widgets.html">Widgets</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     
                     
 

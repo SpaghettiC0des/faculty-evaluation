@@ -15,9 +15,11 @@
         <link href="<?php echo url::base(); ?>public/assets/css/app.min.2.css" rel="stylesheet">
     </head>
     
-    <body class="login-content">
+    <body class="login-content bgm-blue">
+
         <!-- Login -->
         <div class="lc-block toggled" id="l-login">
+            <h1>Faculty Login</h1>
             <div class="input-group m-b-20">
                 <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
                 <div class="fg-line">
@@ -34,18 +36,18 @@
             
             <div class="clearfix"></div>
             
-            <div class="checkbox">
+            <!-- <div class="checkbox">
                 <label>
                     <input type="checkbox" value="">
                     <i class="input-helper"></i>
                     Keep me signed in
                 </label>
-            </div>
+            </div> -->
             
             <a href="" class="btn btn-login btn-danger btn-float"><i class="zmdi zmdi-arrow-forward"></i></a>
             
             <ul class="login-navigation">
-                <li data-block="#l-forget-password" class="bgm-orange">Forgot Password?</li>
+                <!-- <li data-block="#l-forget-password" class="bgm-orange">Forgot Password?</li> -->
             </ul>
         </div>
         

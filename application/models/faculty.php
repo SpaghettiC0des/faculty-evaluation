@@ -12,4 +12,8 @@ class Faculty_Model extends Model {
 	public function findOne($facNo){
 		return $this->db->getwhere('faculty', ['FacultyNo' => $facNo])->current();
 	}
+
+	public function authenticate($credentials){
+		return $this->db->getwhere('faculty', $credentials)->current();
+	}
 }

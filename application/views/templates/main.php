@@ -375,6 +375,7 @@
         <![endif]-->
         
         <!-- Javascript Libraries -->
+        <script src="<?php echo url::base(); ?>public/assets/js/namespaces.js"></script>
         <script src="<?php echo url::base(); ?>public/assets/vendors/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="<?php echo url::base(); ?>public/assets/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="<?php echo url::base(); ?>public/assets/vendors/bower_components/DataTables/datatables.min.js" type="text/javascript"></script>  
@@ -410,7 +411,9 @@
 
         <!-- knockout custom bindings -->
         <script src="<?php echo url::base(); ?>public/assets/js/custom-bindings/datatable_binding.js" type="text/javascript"></script>
+        <script src="<?php echo url::base(); ?>public/assets/js/custom-bindings/faculty_score_binding.js" type="text/javascript"></script>
         <!-- knockout view models -->
+        <script src="<?php echo url::base(); ?>public/assets/js/ViewModels/evaluationForm.js" type="text/javascript"></script>
         <script src="<?php echo url::base(); ?>public/assets/js/ViewModels/main.js" type="text/javascript"></script>
     
     </body>

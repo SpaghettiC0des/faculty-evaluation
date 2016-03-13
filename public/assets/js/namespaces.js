@@ -1,3 +1,4 @@
 var app       = app       || {},
-    helper    = helper    || {}
+    helper    = helper    || {},
 	viewModel = viewModel || {},
+	baseUrl = '/faculty-evaluation/';

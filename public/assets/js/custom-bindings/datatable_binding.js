@@ -3,8 +3,9 @@ ko.bindingHandlers.datatable = {
 		var _defaults = {
 
 			},
-			options = allBindings || _defaults;
-
+			userDefinedOptions = valAccesor(),
+			options = userDefinedOptions || _defaults;
+			console.log(userDefinedOptions);
 			$(el).DataTable(options);
 	}
 }

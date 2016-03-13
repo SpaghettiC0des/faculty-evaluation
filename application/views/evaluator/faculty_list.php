@@ -25,10 +25,10 @@
                                  Evaluate
                             </a>
 
-                            <button class="btn bgm-lightgreen btn-icon-text waves-effect">
+                            <!-- <button class="btn bgm-lightgreen btn-icon-text waves-effect">
                                 <i class="zmdi zmdi-edit"></i> 
                                  Edit
-                            </button>
+                            </button> -->
                         </td>
                     </tr>
                 <?php } ?>
