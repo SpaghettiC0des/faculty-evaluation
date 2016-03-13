@@ -1,0 +1,355 @@
+
+<html>
+<head>
+
+
+</head>
+<body>
+
+<form name="cceencode" method="post" action="addcce.aspx" id="cceencode">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAyNzcxNjYwNQ9kFgICAg9kFgICAQ8WAh4LXyFJdGVtQ291bnQCQBaAAQIBD2QWAmYPFQMBMyIxLjAmbmJzcDtFRFVDQVRJT05BTCBRVUFMSUZJQ0FUSU9OASBkAgIPZBYCZg8VAwExYDEuMCZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0FjYWRlbWljIERlZ3JlZSAvIEFkZGl0aW9uYWwgQWNhZC4gRGVncmVlIC8gQWRkaXRpb25hbCBjcmVkaXRzIGVhcm5lZIoBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTExIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIDD2QWAmYPFQMBMycyLjAmbmJzcDtFWFBFUklFTkNFICYgTEVOR1RIIE9GIFNFUlZJQ0UBIGQCBA9kFgJmDxUDATMuMi4xJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7QWNhZGVtaWMgRXhwZXJpZW5jZQEgZAIFD2QWAmYPFQMBMVEyLjEuMSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0FjYWQuIHNlcnZpY2UgaW4gc3RhdGUgaW5zdGl0dXRpb26LATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0yMTEiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAgYPZBYCZg8VAwExYDIuMS4yJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7QWNhZC4gc2VydmljZSBpbiBpbnN0aXR1dGlvbiBvdGhlciB0aGFuIFNVQywgZXRjLosBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTIxMiIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCBw9kFgJmDxUDATM0Mi4yJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7QWRtaW5pc3RyYXRpdmUgRXhwZXJpZW5jZQEgZAIID2QWAmYPFQMBMTgyLjIuYSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1ByZXNpZGVudIsBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTIyYSIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCCQ9kFgJmDxUDATE9Mi4yLmImbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtWaWNlIFByZXNpZGVudIsBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTIyYiIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCCg9kFgJmDxUDATE8Mi4yLmMmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtEZWFuL0RpcmVjdG9yiwE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MjJjIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAILD2QWAmYPFQMBMUMyLjIuZCZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1ByaW5jaXBhbC9TdXBlcnZpc29yiwE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MjJkIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIMD2QWAmYPFQMBMz0yLjMmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtJbmR1c3RyaWFsL0FncmljdWx0dXJhbCBFeHBlcmllbmNlASBkAg0PZBYCZg8VAwEzUjIuMy4xJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7UHJvZmVzc2lvbmFsICYgVGVjaG5pY2FsIEV4cGVyaWVuY2UBIGQCDg9kFgJmDxUDATFXMi4zLjEuYSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO01hbmFnZXIvRW50cmVwcmVuZXVyjAE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MjMxYSIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCDw9kFgJmDxUDATFaMi4zLjEuYiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1N1cGVydmlzb3IvSGVhZCBvZiBVbml0jAE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MjMxYiIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCEA9kFgJmDxUDATFQMi4zLjEuYyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1JhbmsgYW5kIEZpbGWMATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0yMzFjIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIRD2QWAmYPFQMBM1YyLjMuMiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1B1YmxpYyAmIHByaXZhdGUgaW5zdGl0dXRpb24gZXhwZXJpZW5jZQEgZAISD2QWAmYPFQMBMVYyLjMuMi5hJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Q29vcGVyYXRpbmcgVGVhY2hlcowBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTIzMmEiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAhMPZBYCZg8VAwExWjIuMy4yLmImbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtCYXNpYyBFZHVjYXRpb24gVGVhY2hlcowBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTIzMmIiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAhQPZBYCZg8VAwEzKjMuMCZuYnNwO1BST0ZFU1NJT05BTCBBQ0hJRVZFTUVOVCAmIEhPTk9SUwEgZAIVD2QWAmYPFQMBM18zLjEmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtEaXNjb3ZlcmllcywgcGF0ZW50ZWQgaW52ZW50aW9ucywgaW5ub3ZhdGlvbnMsIHB1Ymxpc2hlZCBib29rcywgZXRjLgEgZAIWD2QWAmYPFQMBM0wzLjEuMSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0Nvc3QgJiBUaW1lIHNhdmluZyBpbm5vdmF0aW9uASBkAhcPZBYCZg8VAwExTTMuMS4xLmEmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtJbnZlbnRpb25zjAE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MzExYSIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCGA9kFgJmDxUDATFOMy4xLjEuYiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0Rpc2NvdmVyaWVzjAE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MzExYiIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCGQ9kFgJmDxUDATFQMy4xLjEuYyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0NyZWF0aXZlIHdvcmuMATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMTFjIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIaD2QWAmYPFQMBMU4zLjEuMS5kJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7SW5ub3ZhdGlvbnOMATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMTFkIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIbD2QWAmYPFQMBMT0zLjEuMiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1B1Ymxpc2hlZCBib29riwE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MzEyIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIcD2QWAmYPFQMBM28zLjEuMyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1NjaG9sYXJseSByZXNlYXJjaC9tb25vZ3JhcGgvZWR1Y2F0aW9uYWwgdGVjaG5pY2FsIGFydGljbGVzL2V0Yy4BIGQCHQ9kFgJmDxUDATFQMy4xLjMuYSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0ludGVybmF0aW9uYWyMATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMTNhIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIeD2QWAmYPFQMBMUszLjEuMy5iJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7TmF0aW9uYWyMATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMTNiIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIfD2QWAmYPFQMBMUgzLjEuMy5jJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7TG9jYWyMATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMTNjIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIgD2QWAmYPFQMBMVkzLjEuNCZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0luc3RydWN0aW9uYWwgbWFudWFsL2F1ZGlvLXZpc3VhbCBtYXRlcmlhbIsBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMxNCIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCIQ9kFgJmDxUDATNzMy4yJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7RXhwZXJ0IHNlcnZpY2VzLCB0cmFpbmluZyBhbmQgYWN0aXZlIHBhcnRpY2lwYXRpb24gaW4gcHJvZmVzc2lvbmFsL3RlY2huaWNhbCBhY3Rpdml0aWVzIAEgZAIiD2QWAmYPFQMBM0UzLjIuMSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1RyYWluaW5nIGFuZCBTZW1pbmFycyABIGQCIw9kFgJmDxUDATNTMy4yLjEuMSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1RyYWluaW5nIGNvdXJzZSABIGQCJA9kFgJmDxUDATFkMy4yLjEuMS5hJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7SW50ZXJuYXRpb25hbI0BPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMyMTFhIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIlD2QWAmYPFQMBMV8zLjIuMS4xLmImbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtOYXRpb25hbI0BPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMyMTFiIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAImD2QWAmYPFQMBMVwzLjIuMS4xLmMmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtMb2NhbI0BPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMyMTFjIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAInD2QWAmYPFQMBMVozLjIuMS4yJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7UmVsZXZhbnQgZmllbGQgdHJhaW5pbmeMATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMjEyIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIoD2QWAmYPFQMBM3QzLjIuMS4zJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7UGFydGljaXBhdGlvbiBpbiBjb25mZXJlbmNlcywgc2VtaW5hcnMsIHdvcmtzaG9wcwEgZAIpD2QWAmYPFQMBMWQzLjIuMS4zLmEmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtJbnRlcm5hdGlvbmFsjQE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MzIxM2EiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAioPZBYCZg8VAwExXzMuMi4xLjMuYiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO05hdGlvbmFsjQE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MzIxM2IiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAisPZBYCZg8VAwExXDMuMi4xLjMuYyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0xvY2FsjQE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MzIxM2MiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAiwPZBYCZg8VAwEzRzMuMi4yJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7RXhwZXJ0IHNlcnZpY2VzIHJlbmRlcmVkASBkAi0PZBYCZg8VAwEzhAEzLjIuMi4xJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7U2hvcnQtdGVybSBjb25zdWx0YW50LyBleHBlcnQgaW4gYWN0aXZpdHkgb2YgYW4gZWR1Y2F0aW9uYWwsIGV0Yy4BIGQCLg9kFgJmDxUDATFkMy4yLjIuMS5hJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7SW50ZXJuYXRpb25hbI0BPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMyMjFhIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIvD2QWAmYPFQMBMV8zLjIuMi4xLmImbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtOYXRpb25hbI0BPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMyMjFiIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIwD2QWAmYPFQMBMVwzLjIuMi4xLmMmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtMb2NhbI0BPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMyMjFjIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAIxD2QWAmYPFQMBM3wzLjIuMi4yJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7U2VydmljZXMgcmVuZGVyZWQgYXMgdHJhaW5lciwgY29vcmRpbmF0b3IsIGxlY3R1cmVyLCBldGMuASBkAjIPZBYCZg8VAwExZDMuMi4yLjIuYSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0ludGVybmF0aW9uYWyNATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMjIyYSIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCMw9kFgJmDxUDATFfMy4yLjIuMi5iJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7TmF0aW9uYWyNATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMjIyYiIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCNA9kFgJmDxUDATFcMy4yLjIuMi5jJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7TG9jYWyNATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMjIyYyIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCNQ9kFgJmDxUDATF9My4yLjIuMyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0V4cGVydCBzZXJ2aWNlcyBhcyBhZHZpc2VyIGluIGRvY3RvcmFsIGRpc3NlcnRhdGlvbnMsIGV0Yy6MATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMjIzIi8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAI2D2QWAmYPFQMBMXgzLjIuMi40Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Q2VydGlmaWVkIHNlcnZpY2VzIGFzIHJldmlld2VyL2V4YW1pbmVyIGluIFBSQyBvciBDU0OMATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMjI0Ii8+PC90ZD4gPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjwvdGQ+ZAI3D2QWAmYPFQMBMWgzLjIuMi41Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7RXhwZXJ0IHNlcnZpY2VzIGluIGFjY3JlZGl0YXRpb24gd29ya4wBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMyMjUiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAjgPZBYCZg8VAwExbzMuMi4yLjYmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtFeHBlcnQgc2VydmljZSBpbiB0cmFkZSBza2lsbCBjZXJ0aWZpY2F0aW9uIIwBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMyMjYiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAjkPZBYCZg8VAwExhgEzLjIuMi43Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7U2VydmUgYXMgY29hY2gvdHJhaW5lciBpbiBzcG9ydHMgb3IgYWR2aXNlciBvZiBzdHVkZW50IG9yZ2FuaXphdGlvbowBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMyMjciLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAjoPZBYCZg8VAwEzZzMuMyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO01lbWJlcnNoaXAgaW4gUHJvZmVzc2lvbmFsIG9yZ2FuaXphdGlvbnMvaG9ub3Igc29jaWV0aWVzIGFuZCBob25vcnMgcmVjZWl2ZWQBIGQCOw9kFgJmDxUDATFzMy4zLjEmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtDdXJyZW50IGluZGl2aWR1YWwgbWVtYmVyc2hpcCBpbiByZWxldmFudCBwcm9mZXNzaW9uYWwgb3JnYW5pemF0aW9uc4sBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMzMSIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCPA9kFgJmDxUDATFTMy4zLjImbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtVbmRlcmdyYWR1YXRlIGFjYWRlbWljIGhvbm9ycyBlYXJuZWSLATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zMzIiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAj0PZBYCZg8VAwExRTMuMy4zJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7U2Nob2xhcnNoaXAvRmVsbG93c2hpcIsBPHRkPjxpbnB1dCB0eXBlPSd0ZXh0JyBuYW1lPSd0eHRjb2RlJyAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InR4dGNvZGUiIHZhbHVlPTMzMyIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCPg9kFgJmDxUDATE5My40Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7QXdhcmRzIG9mIGRpc3RpbmN0aW9uIHJlY2VpdmVkigE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MzQiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kAj8PZBYCZg8VAwExLjMuNSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0NvbW11bml0eSBPdXRyZWFjaCCKATx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJ0eHRjb2RlIiB2YWx1ZT0zNSIvPjwvdGQ+IDx0ZD48aW5wdXQgdHlwZT0ndGV4dCcgbmFtZT0ndHh0Y29kZScgLz48L3RkPmQCQA9kFgJmDxUDATEzMy42Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7UHJvZmVzc2lvbmFsIEV4YW1pbmF0aW9uigE8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0idHh0Y29kZSIgdmFsdWU9MzYiLz48L3RkPiA8dGQ+PGlucHV0IHR5cGU9J3RleHQnIG5hbWU9J3R4dGNvZGUnIC8+PC90ZD5kZPbeCUsDqyu7j59Vd5yLkw0NKgZi" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="980A566E" />
+</div>
+
+
+
+<table border="1" >
+<tr>
+<th width="25">Description</th>
+<th width="15">Score1</th>
+<th width="15">Score2</th>
+</tr>
+
+<tr><td colspan="3">
+1.0&nbsp;EDUCATIONAL QUALIFICATION
+</td> 
+</tr>
+
+<tr><td colspan="1">
+1.0&nbsp;&nbsp;&nbsp;&nbsp;Academic Degree / Additional Acad. Degree / Additional credits earned
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=11"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+2.0&nbsp;EXPERIENCE & LENGTH OF SERVICE
+</td> 
+</tr>
+
+<tr><td colspan="3">
+2.1&nbsp;&nbsp;&nbsp;&nbsp;Academic Experience
+</td> 
+</tr>
+
+<tr><td colspan="1">
+2.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acad. service in state institution
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=211"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+2.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acad. service in institution other than SUC, etc.
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=212"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+2.2&nbsp;&nbsp;&nbsp;&nbsp;Administrative Experience
+</td> 
+</tr>
+
+<tr><td colspan="1">
+2.2.a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;President
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=22a"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+2.2.b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vice President
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=22b"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+2.2.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dean/Director
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=22c"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+2.2.d&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Principal/Supervisor
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=22d"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+2.3&nbsp;&nbsp;&nbsp;&nbsp;Industrial/Agricultural Experience
+</td> 
+</tr>
+
+<tr><td colspan="3">
+2.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Professional & Technical Experience
+</td> 
+</tr>
+
+<tr><td colspan="1">
+2.3.1.a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manager/Entrepreneur
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=231a"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+2.3.1.b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supervisor/Head of Unit
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=231b"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+2.3.1.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rank and File
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=231c"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+2.3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public & private institution experience
+</td> 
+</tr>
+
+<tr><td colspan="1">
+2.3.2.a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cooperating Teacher
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=232a"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+2.3.2.b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basic Education Teacher
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=232b"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+3.0&nbsp;PROFESSIONAL ACHIEVEMENT & HONORS
+</td> 
+</tr>
+
+<tr><td colspan="3">
+3.1&nbsp;&nbsp;&nbsp;&nbsp;Discoveries, patented inventions, innovations, published books, etc.
+</td> 
+</tr>
+
+<tr><td colspan="3">
+3.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cost & Time saving innovation
+</td> 
+</tr>
+
+<tr><td colspan="1">
+3.1.1.a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inventions
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=311a"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.1.1.b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discoveries
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=311b"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.1.1.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative work
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=311c"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.1.1.d&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Innovations
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=311d"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Published book
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=312"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+3.1.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scholarly research/monograph/educational technical articles/etc.
+</td> 
+</tr>
+
+<tr><td colspan="1">
+3.1.3.a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;International
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=313a"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.1.3.b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;National
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=313b"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.1.3.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=313c"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.1.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instructional manual/audio-visual material
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=314"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+3.2&nbsp;&nbsp;&nbsp;&nbsp;Expert services, training and active participation in professional/technical activities 
+</td> 
+</tr>
+
+<tr><td colspan="3">
+3.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Training and Seminars 
+</td> 
+</tr>
+
+<tr><td colspan="3">
+3.2.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Training course 
+</td> 
+</tr>
+
+<tr><td colspan="1">
+3.2.1.1.a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;International
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3211a"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.1.1.b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;National
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3211b"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.1.1.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3211c"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Relevant field training
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3212"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+3.2.1.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Participation in conferences, seminars, workshops
+</td> 
+</tr>
+
+<tr><td colspan="1">
+3.2.1.3.a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;International
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3213a"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.1.3.b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;National
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3213b"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.1.3.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3213c"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+3.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expert services rendered
+</td> 
+</tr>
+
+<tr><td colspan="3">
+3.2.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Short-term consultant/ expert in activity of an educational, etc.
+</td> 
+</tr>
+
+<tr><td colspan="1">
+3.2.2.1.a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;International
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3221a"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.2.1.b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;National
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3221b"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.2.1.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3221c"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+3.2.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Services rendered as trainer, coordinator, lecturer, etc.
+</td> 
+</tr>
+
+<tr><td colspan="1">
+3.2.2.2.a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;International
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3222a"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.2.2.b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;National
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3222b"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.2.2.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3222c"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.2.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expert services as adviser in doctoral dissertations, etc.
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3223"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.2.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Certified services as reviewer/examiner in PRC or CSC
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3224"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.2.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expert services in accreditation work
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3225"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.2.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expert service in trade skill certification 
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3226"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.2.2.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serve as coach/trainer in sports or adviser of student organization
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=3227"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="3">
+3.3&nbsp;&nbsp;&nbsp;&nbsp;Membership in Professional organizations/honor societies and honors received
+</td> 
+</tr>
+
+<tr><td colspan="1">
+3.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current individual membership in relevant professional organizations
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=331"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Undergraduate academic honors earned
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=332"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.3.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scholarship/Fellowship
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=333"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.4&nbsp;&nbsp;&nbsp;&nbsp;Awards of distinction received
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=34"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.5&nbsp;&nbsp;&nbsp;&nbsp;Community Outreach 
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=35"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+<tr><td colspan="1">
+3.6&nbsp;&nbsp;&nbsp;&nbsp;Professional Examination
+</td><td><input type='text' name='txtcode' /><input type="hidden" name="txtcode" value=36"/></td> <td><input type='text' name='txtcode' /></td>
+</tr>
+
+</table>
+
+
+<input type="submit" name="submit" value="Submit"   />
+</form>
+
+</body>
+</html>
